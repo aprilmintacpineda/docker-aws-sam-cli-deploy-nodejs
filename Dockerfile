@@ -4,7 +4,7 @@ WORKDIR /usr
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install wget curl unzip openssh-client git python python3 -y
+RUN apt-get install wget curl unzip openssh-client git python python3 build-essential -y
 RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g yarn
